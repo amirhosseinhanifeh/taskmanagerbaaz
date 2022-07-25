@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MsftFluentResult" Version="1.0.2" />
+    <PackageReference Include="MsftFramework.Abstractions" Version="1.0.2" />
+    <PackageReference Include="MsftFramework.Core" Version="1.0.4" />
+    <PackageReference Include="MsftFramework.Scheduling.Hangfire" Version="1.0.2" />
+    <PackageReference Include="MsftFramework.Scheduling.Internal" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MS.Services.TaskCatalog.Domain\MS.Services.TaskCatalog.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
+

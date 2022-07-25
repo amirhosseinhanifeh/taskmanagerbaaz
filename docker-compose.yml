@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+  web:
+    image: 'localhost:5000/taskmanager'
+    restart: always
+    ports:
+      - '8098:80'

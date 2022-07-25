@@ -1,0 +1,50 @@
+{
+  "name": "Collect",
+  "workflowSteps": [
+    {
+      "name": "Calling",
+      "order": 1,
+      "deadline": "00:01:00",
+      "workflowAgents": [
+        {
+          "name": "rohoolah",
+          "order": 1
+        },
+{
+          "name": "amir hosein",
+          "order": 2
+        }
+      ]
+    },
+{
+      "name": "Pricing",
+      "order":2,
+      "deadline":"00:01:00",
+      "workflowAgents": [
+        {
+          "name": "ali",
+          "order": 1
+        },
+{
+          "name": "esmaeil",
+          "order": 2
+        }
+      ]
+    },
+{
+      "name": "Buing",
+      "order": 3,
+      "deadline": "00:01:00",
+      "workflowAgents": [
+        {
+          "name": "mostafa",
+          "order": 1
+        },
+{
+          "name": "mojarab",
+          "order": 2
+        }
+      ]
+    }
+  ]
+}

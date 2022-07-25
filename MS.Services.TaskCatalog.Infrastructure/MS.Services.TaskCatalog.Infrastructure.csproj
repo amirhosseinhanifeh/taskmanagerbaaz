@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+
+
+	
+	<ItemGroup>
+		<PackageReference Include="FirebaseAdmin" Version="2.3.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.4">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.DotNet.PlatformAbstractions" Version="3.1.6" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.4" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="6.0.4" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.4">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.1" />
+		<PackageReference Include="MsftFluentResult" Version="1.0.2" />
+
+		<PackageReference Include="MsftFramework.Abstractions" Version="1.0.2" />
+		<PackageReference Include="MsftFramework.Caching.InMemory" Version="1.0.0" />
+		<PackageReference Include="MsftFramework.Core" Version="1.0.4" />
+		<PackageReference Include="MsftFramework.CQRS" Version="1.0.2" />
+		<PackageReference Include="MsftFramework.Email" Version="1.0.0" />
+		<PackageReference Include="MsftFramework.Logging" Version="1.0.1" />
+		<PackageReference Include="MsftFramework.Messaging.Postgres" Version="1.0.0" />
+		<PackageReference Include="MsftFramework.Messaging.Transport.Rabbitmq" Version="1.0.0" />
+		<PackageReference Include="MsftFramework.Monitoring" Version="1.0.0" />
+		<PackageReference Include="MsftFramework.Persistence.EfCore.Postgres" Version="1.0.0" />
+		<PackageReference Include="MsftFramework.Persistence.Mongo" Version="1.0.0" />
+		<PackageReference Include="MsftFramework.Scheduling.Internal" Version="1.0.1" />
+		<PackageReference Include="MsftFramework.Validation" Version="1.0.0" />
+		<PackageReference Include="Bogus" Version="34.0.2" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
+		<PackageReference Include="PersianDateTime" Version="1.1.5082.36395" />
+
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\MS.Services.TaskCatalog.Domain\MS.Services.TaskCatalog.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Migrations\" />
+	</ItemGroup>
+
+</Project>

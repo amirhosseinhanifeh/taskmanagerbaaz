@@ -1,0 +1,33 @@
+﻿  <Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Brands\**" />
+    <Compile Remove="Categories\**" />
+    <Compile Remove="Suppliers\**" />
+    <EmbeddedResource Remove="Brands\**" />
+    <EmbeddedResource Remove="Categories\**" />
+    <EmbeddedResource Remove="Suppliers\**" />
+    <None Remove="Brands\**" />
+    <None Remove="Categories\**" />
+    <None Remove="Suppliers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MsftFluentResult" Version="1.0.2" />
+    <PackageReference Include="MsftFramework.Abstractions" Version="1.0.2" />
+    <PackageReference Include="MsftFramework.Core" Version="1.0.4" />
+    <PackageReference Include="RestEase" Version="1.5.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MS.Services.TaskCatalog.Contract\MS.Services.TaskCatalog.Contract.csproj" />
+  </ItemGroup>
+
+</Project>
+ 

@@ -1,0 +1,58 @@
+﻿  <Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>f7b6b210-48db-4cf3-afae-0a30088cf698</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="json\role.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="json\role.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.GuardClauses" Version="4.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="6.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="MsftFluentResult" Version="1.0.2" />
+    <PackageReference Include="MsftFramework.Abstractions" Version="1.0.2" />
+    <PackageReference Include="MsftFramework.Caching.Redis" Version="1.0.1" />
+    <PackageReference Include="MsftFramework.Core" Version="1.0.4" />
+    <PackageReference Include="MsftFramework.Logging" Version="1.0.1" />
+    <PackageReference Include="MsftFramework.Scheduling.Hangfire" Version="1.0.2" />
+    <PackageReference Include="MsftFramework.Security" Version="1.0.5" />
+    <PackageReference Include="MsftFramework.Swagger" Version="1.0.0" />
+    <PackageReference Include="MsftFramework.Web" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MS.Services.TaskCatalog.Application\MS.Services.TaskCatalog.Application.csproj" />
+    <ProjectReference Include="..\MS.Services.TaskCatalog.Domain\MS.Services.TaskCatalog.Domain.csproj" />
+    <ProjectReference Include="..\MS.Services.TaskCatalog.Infrastructure\MS.Services.TaskCatalog.Infrastructure.csproj" />
+    <ProjectReference Include="..\MS.Services.TaskCatalog.Rest\MS.Services.TaskCatalog.Rest.csproj" />
+    <ProjectReference Include="..\MS.Services.TaskCatalog.Contract\MS.Services.TaskCatalog.Contract.csproj" />
+ 
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+
+</Project>
+
+

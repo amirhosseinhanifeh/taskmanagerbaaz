@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.tests.json" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Bogus" />
+		<PackageReference Include="FluentAssertions.Web" />
+		<PackageReference Include="MartinCostello.Logging.XUnit" Version="0.2.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" />
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+		<PackageReference Include="Moq" />
+		<PackageReference Include="MsftFluentResult" Version="1.0.0" />
+		<PackageReference Include="MsftFramework.Abstractions" Version="1.0.1" />
+		<PackageReference Include="MsftFramework.Core" Version="1.0.4" />
+		<PackageReference Include="MsftFramework.CQRS" Version="1.0.2" />
+		<PackageReference Include="MsftFramework.Messaging.Postgres" Version="1.0.0" />
+		<PackageReference Include="MsftFramework.Messaging.Transport.InMemory" Version="1.0.0" />
+		<PackageReference Include="MsftFramework.Messaging.Transport.Rabbitmq" Version="1.0.0" />
+		<PackageReference Include="MsftFramework.Persistence.Marten" Version="1.0.0" />
+		<PackageReference Include="NSubstitute" />
+		<PackageReference Include="Respawn" />
+		<PackageReference Include="xunit" Version="2.4.1" />
+		<PackageReference Update="Bogus" Version="34.0.2" />
+		<PackageReference Update="FluentAssertions" Version="6.6.0" />
+		<PackageReference Update="FluentAssertions.Web" Version="1.2.1" />
+		<PackageReference Update="FluentResults.Extensions.FluentAssertions" Version="1.1.0" />
+		<PackageReference Update="Microsoft.AspNetCore.Mvc.Testing" Version="6.0.5" />
+		<PackageReference Update="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+		<PackageReference Update="Moq" Version="4.18.1" />
+		<PackageReference Update="NSubstitute" Version="4.3.0" />
+		<PackageReference Update="Respawn" Version="5.0.1" />
+		<PackageReference Update="Squadron.Mongo" Version="0.14.1" />
+		<PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="coverlet.collector" Version="3.1.0">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\MS.Services.TaskCatalog.Domain\MS.Services.TaskCatalog.Domain.csproj" />
+	</ItemGroup>
+
+</Project>

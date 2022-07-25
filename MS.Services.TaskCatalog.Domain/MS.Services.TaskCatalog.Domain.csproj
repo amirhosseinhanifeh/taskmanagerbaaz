@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Workflows\Features\UpdatingWorkflow\**" />
+    <EmbeddedResource Remove="Workflows\Features\UpdatingWorkflow\**" />
+    <None Remove="Workflows\Features\UpdatingWorkflow\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Comments\Features\UpdatingComment\" />
+    <Folder Include="Users\Features\UpdatingUser\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MsftFluentResult" Version="1.0.2" />
+    <PackageReference Include="MsftFramework.Abstractions" Version="1.0.2" />
+    <PackageReference Include="MsftFramework.Core" Version="1.0.4" />
+  </ItemGroup>
+
+</Project>
